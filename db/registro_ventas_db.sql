@@ -1,3 +1,4 @@
+--Archivo SQL--
 CREATE DATABASE IF NOT EXISTS registro_ventas;
 
 USE registro_ventas;
