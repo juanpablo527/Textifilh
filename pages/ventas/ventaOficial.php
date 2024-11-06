@@ -3,33 +3,32 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <title>Bienvenido a | Textifilh</title>
     <!-- Favicon-->
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../../favicon.ico" type="image/x-icon">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
 
     <!-- Bootstrap Core Css -->
-    <link href="plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="../../plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
 
     <!-- Waves Effect Css -->
-    <link href="plugins/node-waves/waves.css" rel="stylesheet" />
+    <link href="../../plugins/node-waves/waves.css" rel="stylesheet" />
 
     <!-- Animation Css -->
-    <link href="plugins/animate-css/animate.css" rel="stylesheet" />
+    <link href="../../plugins/animate-css/animate.css" rel="stylesheet" />
 
-    <!-- Morris Chart Css-->
-    <link href="plugins/morrisjs/morris.css" rel="stylesheet" />
+    <!-- Sweet Alert Css -->
+    <link href="../../plugins/sweetalert/sweetalert.css" rel="stylesheet" />
 
     <!-- Custom Css -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="../../css/style.css" rel="stylesheet">
 
     <!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
-    <link href="css/themes/all-themes.css" rel="stylesheet" />
+    <link href="../../css/themes/all-themes.css" rel="stylesheet" />
 </head>
 
 <body class="theme-red">
@@ -70,7 +69,7 @@
             <div class="navbar-header">
                 <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>
                 <a href="javascript:void(0);" class="bars"></a>
-                <a class="navbar-brand" href="index.html">TEXTIFILH - CONTROL DE VENTAS</a>
+                <a class="navbar-brand" href="../../index.php">TEXTIFILH - REGISTRO VENTAS OFICIALES</a>
             </div>
             <div class="collapse navbar-collapse" id="navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
@@ -276,7 +275,7 @@
             <!-- User Info -->
             <div class="user-info">
                 <div class="image">
-                    <img src="images/user.png" width="48" height="48" alt="User" />
+                    <img src="../../images/user.png" width="48" height="48" alt="User" />
                 </div>
                 <div class="info-container">
                     <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Rosa Uribe</div>
@@ -301,7 +300,7 @@
                 <ul class="list">
                     <li class="header">MENÚ</li>
                     <li class="active">
-                        <a href="index.html">
+                        <a href="index.php">
                             <i class="material-icons">home</i>
                             <span>Home</span>
                         </a>
@@ -318,7 +317,7 @@
                                 </a
                             </li>
                             <li>
-                                <a href="pages/widgets/cards/basic.html">
+                                <a href="pages/ventas/ventaOficial.php">
                                     <span>Oficiales</span>
                                 </a>
                             </li>
@@ -631,99 +630,115 @@
     <section class="content">
         <div class="container-fluid">
             <div class="block-header">
-                <h2>DASHBOARD</h2>
+                <h2>VENTAS</h2>
             </div>
 
-            <!-- Widgets -->
+            <!-- Multi Column -->
             <div class="row clearfix">
-                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                    <div class="info-box bg-pink hover-expand-effect">
-                        <div class="icon">
-                            <i class="material-icons">playlist_add_check</i>
-                        </div>
-                        <div class="content">
-                            <div class="text">PLANILLA</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                    <div class="info-box bg-light-green hover-expand-effect">
-                        <div class="icon">
-                            <i class="material-icons">forum</i>
-                        </div>
-                        <div class="content">
-                            <div class="text">REPORTES</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- #END# Widgets -->
-            <!-- CPU Usage -->
-            <div class="row clearfix">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="card">
                         <div class="header">
-                            <div class="row clearfix">
-                                <div class="col-xs-12 col-sm-6">
-                                    <h2>Bienvenido!</h2>
-                                </div>
-                                
-                            </div>
-                            
+                            <h2>
+                            OFICIALES
+                            </h2>
+                            <ul class="header-dropdown m-r--5">
+                                <li class="dropdown">
+                                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                        <i class="material-icons">more_vert</i>
+                                    </a>
+                                    <ul class="dropdown-menu pull-right">
+                                        <li><a href="javascript:void(0);">Action</a></li>
+                                        <li><a href="javascript:void(0);">Another action</a></li>
+                                        <li><a href="javascript:void(0);">Something else here</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
                         </div>
                         <div class="body">
-                            <div><img src="images/LogoHome.png" class="js-animating-object img-responsive"></div>
-							
+                            <div class="row clearfix">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <div class="form-line">
+                                        <label for="formaPago">Seleccione la forma de pago:</label>
+                                            <select id="formaPago" name="formaPago" onchange="actualizarCamposPago()">
+                                                <option value="">-- Seleccione --</option>
+                                                <option value="tarjeta">Tarjeta de Crédito</option>
+                                                <option value="transferencia">Transferencia Bancaria</option>
+                                                <option value="efectivo">Efectivo</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="camposPago"></div>
+                            
+
+                            
+
+                            
+
+                            
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- #END# CPU Usage -->
-			
+            <!-- #END# Multi Column -->
         </div>
     </section>
 
     <!-- Jquery Core Js -->
-    <script src="plugins/jquery/jquery.min.js"></script>
+    <script src="../../plugins/jquery/jquery.min.js"></script>
 
     <!-- Bootstrap Core Js -->
-    <script src="plugins/bootstrap/js/bootstrap.js"></script>
+    <script src="../../plugins/bootstrap/js/bootstrap.js"></script>
 
     <!-- Select Plugin Js -->
-    <script src="plugins/bootstrap-select/js/bootstrap-select.js"></script>
+    <script src="../../plugins/bootstrap-select/js/bootstrap-select.js"></script>
 
     <!-- Slimscroll Plugin Js -->
-    <script src="plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
+    <script src="../../plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
 
     <!-- Waves Effect Plugin Js -->
-    <script src="plugins/node-waves/waves.js"></script>
-
-    <!-- Jquery CountTo Plugin Js -->
-    <script src="plugins/jquery-countto/jquery.countTo.js"></script>
-
-    <!-- Morris Plugin Js -->
-    <script src="plugins/raphael/raphael.min.js"></script>
-    <script src="plugins/morrisjs/morris.js"></script>
-
-    <!-- ChartJs -->
-    <script src="plugins/chartjs/Chart.bundle.js"></script>
-
-    <!-- Flot Charts Plugin Js -->
-    <script src="plugins/flot-charts/jquery.flot.js"></script>
-    <script src="plugins/flot-charts/jquery.flot.resize.js"></script>
-    <script src="plugins/flot-charts/jquery.flot.pie.js"></script>
-    <script src="plugins/flot-charts/jquery.flot.categories.js"></script>
-    <script src="plugins/flot-charts/jquery.flot.time.js"></script>
-
-    <!-- Sparkline Chart Plugin Js -->
-    <script src="plugins/jquery-sparkline/jquery.sparkline.js"></script>
+    <script src="../../plugins/node-waves/waves.js"></script>
 
     <!-- Custom Js -->
-    <script src="js/admin.js"></script>
-    <script src="js/pages/index.js"></script>
+    <script src="../../js/admin.js"></script>
 
     <!-- Demo Js -->
-    <script src="js/demo.js"></script>
+    <script src="../../js/demo.js"></script>
 </body>
+<script>
+    function actualizarCamposPago() {
+        const camposPagoDiv = document.getElementById("camposPago");
+        const formaPago = document.getElementById("formaPago").value;
 
-</html>
+        // Limpia los campos anteriores
+        camposPagoDiv.innerHTML = "";
+
+        // Genera campos en función de la forma de pago seleccionada
+        if (formaPago === "tarjeta") {
+            camposPagoDiv.innerHTML = `
+                <label for="numeroTarjeta">Número de Tarjeta:</label>
+                <input type="text" id="numeroTarjeta" name="numeroTarjeta">
+                <br>
+                <label for="fechaExpiracion">Fecha de Expiración:</label>
+                <input type="text" id="fechaExpiracion" name="fechaExpiracion" placeholder="MM/AA">
+                <br>
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" name="cvv">
+            `;
+        } else if (formaPago === "transferencia") {
+            camposPagoDiv.innerHTML = `
+                <label for="banco">Banco:</label>
+                <input type="text" id="banco" name="banco">
+                <br>
+                <label for="numeroCuenta">Número de Cuenta:</label>
+                <input type="text" id="numeroCuenta" name="numeroCuenta">
+            `;
+        } else if (formaPago === "efectivo") {
+            camposPagoDiv.innerHTML = `
+                <p>Para pagos en efectivo, por favor acérquese a nuestra sucursal.</p>
+            `;
+        }
+    }
+</script>
